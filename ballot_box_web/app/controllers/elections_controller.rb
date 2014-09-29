@@ -17,10 +17,26 @@ class ElectionsController < ApplicationController
     def show
         @election = Election.find(params[:id])
     end
-    
-#    def update
-#        @election = Election.find(params[:id])
 
+    def edit
+        @election = Election.find(params[:id])
+    end
+    
+    def update
+        @election = Election.find(params[:id])
+        if @election.update(election_params)
+            redirect_to @election
+        else
+            render 'edit'
+        end
+    end
+
+    def destroy
+        @election = Election.find(params[:id])
+        @election.destroy
+
+        redirect_to elections_path
+    end
 
     private
         def election_params

@@ -4,12 +4,22 @@
     <tr>
         <th>Title</th>
         <th>Text</th>
+        <th colspan="2"></th>
     </tr>
 
     <% @elections.each do |election| %>
         <tr>
             <td><%= election.title %></td>
             <td><%= election.text %></td>
+            <td><%= link_to 'Show', election_path(election) %></td>
+            <% if current_user.email == election.creator %>
+                <td><%= link_to 'Edit', edit_election_path(election) %></td>
+                <td><%= link_to 'Destroy', election_path(election), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
         </tr>
     <% end %>
 </table>
+
+<br />
+<br />
+<%= link_to 'Create a New Election', new_election_path %>

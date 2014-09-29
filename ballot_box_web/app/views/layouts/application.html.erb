@@ -38,17 +38,23 @@
         </div>
     </div>
 
-<% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+    <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
 
-<div class="container">
-    <%= yield %>
-</div>
+    <div class="container">
+        <%= yield %>
+    </div>
 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; BallotBox 2014</p>
+        </div>
+    </footer>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
 </body>
 </html>
