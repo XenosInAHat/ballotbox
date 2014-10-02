@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyString
+  count: 1
+  election_id: 
+
+two:
+  body: MyString
+  count: 1
+  election_id: 
