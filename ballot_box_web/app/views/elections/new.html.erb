@@ -1,15 +1,45 @@
 <h1>New Election</h1>
 
-<%= form_for :election, url: elections_path do |f| %>
-    <p>
+<%= form_for(setup_election(@election)) do |f| %>
+    <% if @election.errors.any? %>
+        <div id="error_explanation">
+            <h2>
+                <%= pluralize(@election.errors.count, 'error') %> 
+                prohibited this user from being saved:
+            </h2>
+
+            <ul>
+                <% @election.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div>
         <%= f.label :title %><br />
         <%= f.text_field :title %>
-    </p>
-    <p>
+    </div>
+
+    <div>
         <%= f.label :text %><br />
         <%= f.text_area :text %>
-    </p>
-    <p>
+    </div>
+
+    <h2>Choices</h2>
+    <%= f.fields_for :choices do |ff| %>
+        <div>
+            <%= ff.label :body %>
+            <%= ff.text_field :body %>
+
+            <% if ff.object.persisted? %>
+                <%= ff.check_box :_destroy %>
+                <%= ff.label :_destroy, 'Destroy' %>
+            <% end %>
+        </div>
+    <% end %>
+
+    <div>
         <%= f.submit %>
-    </p>
+    </div>
 <% end %>

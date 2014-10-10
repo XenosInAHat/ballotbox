@@ -4,18 +4,23 @@ class ElectionsController < ApplicationController
     end
 
     def new
+        @election = Election.new
     end
 
     def create
-        @election = Election.new(election_params)
+        @election = Election.new(params[:election])
         @election.creator = current_user.email
 
-        @election.save
-        redirect_to @election
+        if @election.save
+            redirect_to @election
+        else
+            render :action => 'new'
+        end
     end
 
     def show
         @election = Election.find(params[:id])
+        @choices = Choice.where(election_id: params[:id])
     end
 
     def edit
@@ -24,10 +29,11 @@ class ElectionsController < ApplicationController
     
     def update
         @election = Election.find(params[:id])
+
         if @election.update(election_params)
             redirect_to @election
         else
-            render 'edit'
+            render :action => 'edit' 
         end
     end
 

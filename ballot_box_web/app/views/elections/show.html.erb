@@ -6,5 +6,11 @@
     <strong>Text:</strong>
     <%= @election.text %>
 </p>
+<% for choice in @choices %>
+    <p>
+        <strong>Choice:</strong>
+        <%= choice.body %>
+    </p>
+<% end %>
 
 <%= link_to 'Back', elections_path %>
