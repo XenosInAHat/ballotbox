@@ -2,15 +2,29 @@
     <strong>Title:</strong>
     <%= @election.title %>
 </p>
+
 <p>
     <strong>Text:</strong>
     <%= @election.text %>
 </p>
-<% for choice in @choices %>
-    <p>
-        <strong>Choice:</strong>
-        <%= choice.body %>
-    </p>
-<% end %>
+
+<strong>Choices:</strong>
+<ul>
+    <% for choice in @election.choices %>
+        <% if current_user.email == @election.creator %>
+            <p>
+                <%= choice.body %>: <%= pluralize choice.reputation_for(:votes).to_i, "vote" %>
+            </p>
+        <% else %>
+            <p>
+                <%= choice.body %>
+                <% if current_user && !choice.has_evaluation?(:votes, current_user) %>
+                    | <%= link_to "Vote for this!", vote_election_choice_path(election_id: choice.election_id, id: choice.id, type: "up"), method: "post" %>
+                    | <%= link_to "Cancel vote", vote_election_choice_path(election_id: choice.election_id, id: choice.id, type: "down"), method: "post" %>
+                <% end %>
+            </p>
+        <% end %>
+    <% end %>
+</ul>
 
 <%= link_to 'Back', elections_path %>

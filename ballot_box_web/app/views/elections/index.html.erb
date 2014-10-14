@@ -11,10 +11,21 @@
         <tr>
             <td><%= election.title %></td>
             <td><%= election.text %></td>
-            <td><%= link_to 'Show', election_path(election) %></td>
             <% if current_user.email == election.creator %>
+                <td><%= link_to 'Show', election_path(election) %></td>
                 <td><%= link_to 'Edit', edit_election_path(election) %></td>
                 <td><%= link_to 'Destroy', election_path(election), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% else %>
+                <% voted = false %>
+                <% for choice in election.choices.all %>
+                    <% if choice.has_evaluation?(:votes, current_user) %>
+                        <% voted = true %>
+                    <% end %>
+                <% end %>
+
+                <% if !voted %>
+                    <td><%= link_to 'Vote', election_path(election) %></td>
+                <% end %>
             <% end %>
         </tr>
     <% end %>

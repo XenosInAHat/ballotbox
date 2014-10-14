@@ -1,7 +1,11 @@
-# BallotBox
+README
+------
 
-BallotBox serves as a cross-platform, anonymous voting system. 
+The web application for BallotBox is written using Ruby on Rails v4.1.5 on top of Ruby 2.1.2.
 
-Written using Ruby on Rails v4.5.1 for web; Objective-C and Swift for iOS; and Java for Android.
-
-Platform specific progress is listed in READMEs within the specific directory (e.g. web progress can be found in ballot\_box\_web).
+Features Implemented:
+* User Authentication (via the Devise Ruby Gem)
+* Election creation -- currently just a title and text description
+* Show, Edit, and Destroy functionality for all elections
+* Restricted access to Edit and Destroy functions (i.e. only creators of an election can edit/destory)
+* Basic navigation bar (via Bootstrap)

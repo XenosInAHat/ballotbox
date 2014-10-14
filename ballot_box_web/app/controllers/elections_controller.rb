@@ -5,10 +5,11 @@ class ElectionsController < ApplicationController
 
     def new
         @election = Election.new
+        3.times { @election.choices.build }
     end
 
     def create
-        @election = Election.new(params[:election])
+        @election = Election.new(election_params)
         @election.creator = current_user.email
 
         if @election.save
@@ -20,7 +21,6 @@ class ElectionsController < ApplicationController
 
     def show
         @election = Election.find(params[:id])
-        @choices = Choice.where(election_id: params[:id])
     end
 
     def edit
@@ -46,6 +46,6 @@ class ElectionsController < ApplicationController
 
     private
         def election_params
-            params.require(:election).permit(:title, :text)
+            params.require(:election).permit(:title, :text, choices_attributes: [:id, :body])
         end
 end

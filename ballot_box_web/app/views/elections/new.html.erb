@@ -1,6 +1,6 @@
 <h1>New Election</h1>
 
-<%= form_for(setup_election(@election)) do |f| %>
+<%= form_for @election do |f| %>
     <% if @election.errors.any? %>
         <div id="error_explanation">
             <h2>

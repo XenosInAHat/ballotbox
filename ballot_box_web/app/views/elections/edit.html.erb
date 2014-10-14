@@ -1,6 +1,6 @@
 <h1>Editing Election</h1>
 
-<%= form_for :election, url: election_path(@election), method: :patch do |f| %>
+<%= form_for @election do |f| %>
     <% if @election.errors.any? %>
         <div id="error_explanation">
             <h2><%= pluralize(@election.errors.count, 'error') %> prohibited this article from being saved:</h2>
@@ -19,6 +19,13 @@
         <%= f.label :text %><br />
         <%= f.text_area :text %>
     </p>
+    <h2>Choices</h2>
+    <%= f.fields_for :choices do |ff| %>
+        <div>
+            <%= ff.label :body %>
+            <%= ff.text_field :body %>
+        </div>
+    <% end %>
     <p>
         <%= f.submit %>
     </p>
