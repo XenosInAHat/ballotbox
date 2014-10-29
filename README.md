@@ -11,4 +11,4 @@ Features Implemented:
 * Basic navigation bar (via Bootstrap)
 
 Features In Progress:
-* Mobile apps - Andoird & iPhone
+* Mobile apps - Android & iPhone
