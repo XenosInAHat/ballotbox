@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141014034133) do
+ActiveRecord::Schema.define(version: 20141104215053) do
 
   create_table "choices", force: true do |t|
     t.string   "body"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20141014034133) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "creator"
+    t.boolean  "private"
   end
 
   create_table "rs_evaluations", force: true do |t|

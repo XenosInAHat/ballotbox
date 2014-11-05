@@ -26,6 +26,11 @@
         <%= f.text_area :text %>
     </div>
 
+    <div>
+        <%= f.label :private %><br />
+        <%= f.check_box :private %>
+    </div>
+
     <h2>Choices</h2>
     <%= f.fields_for :choices do |ff| %>
         <div>
