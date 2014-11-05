@@ -9,3 +9,6 @@ Features Implemented:
 * Show, Edit, and Destroy functionality for all elections
 * Restricted access to Edit and Destroy functions (i.e. only creators of an election can edit/destory)
 * Basic navigation bar (via Bootstrap)
+
+Features In Progress:
+* Mobile apps - Android & iPhone
