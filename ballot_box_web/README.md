@@ -10,3 +10,4 @@ Features Implemented:
 * Restricted access to Edit and Destroy functions (i.e. only creators of an election can edit/destory)
 * Basic navigation bar (via Bootstrap)
 * Basic voting (via the ActiveRecord Reputation System Gem)
+* Private/public voting differentiation
