@@ -7,55 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C68DC2B51A315BED00ACF464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2B41A315BED00ACF464 /* main.m */; };
-		C68DC2B81A315BED00ACF464 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2B71A315BED00ACF464 /* AppDelegate.m */; };
-		C68DC2BB1A315BED00ACF464 /* BallotBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2B91A315BED00ACF464 /* BallotBox.xcdatamodeld */; };
-		C68DC2BE1A315BED00ACF464 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2BD1A315BED00ACF464 /* MasterViewController.m */; };
-		C68DC2C11A315BED00ACF464 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2C01A315BED00ACF464 /* DetailViewController.m */; };
-		C68DC2C41A315BED00ACF464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68DC2C21A315BED00ACF464 /* Main.storyboard */; };
-		C68DC2C61A315BED00ACF464 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68DC2C51A315BED00ACF464 /* Images.xcassets */; };
-		C68DC2C91A315BED00ACF464 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68DC2C71A315BED00ACF464 /* LaunchScreen.xib */; };
-		C68DC2D51A315BED00ACF464 /* BallotBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C68DC2D41A315BED00ACF464 /* BallotBoxTests.m */; };
+		C6BC6C651A318C50002F21CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6C641A318C50002F21CD /* AppDelegate.swift */; };
+		C6BC6C671A318C50002F21CD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6C661A318C50002F21CD /* MasterViewController.swift */; };
+		C6BC6C691A318C50002F21CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6C681A318C50002F21CD /* DetailViewController.swift */; };
+		C6BC6C6C1A318C50002F21CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BC6C6A1A318C50002F21CD /* Main.storyboard */; };
+		C6BC6C6E1A318C50002F21CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BC6C6D1A318C50002F21CD /* Images.xcassets */; };
+		C6BC6C711A318C50002F21CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6BC6C6F1A318C50002F21CD /* LaunchScreen.xib */; };
+		C6BC6C7D1A318C50002F21CD /* BallotBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6C7C1A318C50002F21CD /* BallotBoxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C68DC2CF1A315BED00ACF464 /* PBXContainerItemProxy */ = {
+		C6BC6C771A318C50002F21CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C68DC2A71A315BED00ACF464 /* Project object */;
+			containerPortal = C6BC6C571A318C50002F21CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C68DC2AE1A315BED00ACF464;
+			remoteGlobalIDString = C6BC6C5E1A318C50002F21CD;
 			remoteInfo = BallotBox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C68DC2AF1A315BED00ACF464 /* BallotBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallotBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C68DC2B31A315BED00ACF464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C68DC2B41A315BED00ACF464 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C68DC2B61A315BED00ACF464 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C68DC2B71A315BED00ACF464 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C68DC2BA1A315BED00ACF464 /* BallotBox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BallotBox.xcdatamodel; sourceTree = "<group>"; };
-		C68DC2BC1A315BED00ACF464 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C68DC2BD1A315BED00ACF464 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C68DC2BF1A315BED00ACF464 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C68DC2C01A315BED00ACF464 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		C68DC2C31A315BED00ACF464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C68DC2C51A315BED00ACF464 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C68DC2C81A315BED00ACF464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C68DC2CE1A315BED00ACF464 /* BallotBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallotBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C68DC2D31A315BED00ACF464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C68DC2D41A315BED00ACF464 /* BallotBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallotBoxTests.m; sourceTree = "<group>"; };
+		C6BC6C5F1A318C50002F21CD /* BallotBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallotBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC6C631A318C50002F21CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BC6C641A318C50002F21CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6BC6C661A318C50002F21CD /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C6BC6C681A318C50002F21CD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C6BC6C6B1A318C50002F21CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6BC6C6D1A318C50002F21CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6BC6C701A318C50002F21CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C6BC6C761A318C50002F21CD /* BallotBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallotBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BC6C7B1A318C50002F21CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BC6C7C1A318C50002F21CD /* BallotBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotBoxTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C68DC2AC1A315BED00ACF464 /* Frameworks */ = {
+		C6BC6C5C1A318C50002F21CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C68DC2CB1A315BED00ACF464 /* Frameworks */ = {
+		C6BC6C731A318C50002F21CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,64 +58,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C68DC2A61A315BED00ACF464 = {
+		C6BC6C561A318C50002F21CD = {
 			isa = PBXGroup;
 			children = (
-				C68DC2B11A315BED00ACF464 /* BallotBox */,
-				C68DC2D11A315BED00ACF464 /* BallotBoxTests */,
-				C68DC2B01A315BED00ACF464 /* Products */,
+				C6BC6C611A318C50002F21CD /* BallotBox */,
+				C6BC6C791A318C50002F21CD /* BallotBoxTests */,
+				C6BC6C601A318C50002F21CD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C68DC2B01A315BED00ACF464 /* Products */ = {
+		C6BC6C601A318C50002F21CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C68DC2AF1A315BED00ACF464 /* BallotBox.app */,
-				C68DC2CE1A315BED00ACF464 /* BallotBoxTests.xctest */,
+				C6BC6C5F1A318C50002F21CD /* BallotBox.app */,
+				C6BC6C761A318C50002F21CD /* BallotBoxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C68DC2B11A315BED00ACF464 /* BallotBox */ = {
+		C6BC6C611A318C50002F21CD /* BallotBox */ = {
 			isa = PBXGroup;
 			children = (
-				C68DC2B61A315BED00ACF464 /* AppDelegate.h */,
-				C68DC2B71A315BED00ACF464 /* AppDelegate.m */,
-				C68DC2BC1A315BED00ACF464 /* MasterViewController.h */,
-				C68DC2BD1A315BED00ACF464 /* MasterViewController.m */,
-				C68DC2BF1A315BED00ACF464 /* DetailViewController.h */,
-				C68DC2C01A315BED00ACF464 /* DetailViewController.m */,
-				C68DC2C21A315BED00ACF464 /* Main.storyboard */,
-				C68DC2C51A315BED00ACF464 /* Images.xcassets */,
-				C68DC2C71A315BED00ACF464 /* LaunchScreen.xib */,
-				C68DC2B91A315BED00ACF464 /* BallotBox.xcdatamodeld */,
-				C68DC2B21A315BED00ACF464 /* Supporting Files */,
+				C6BC6C641A318C50002F21CD /* AppDelegate.swift */,
+				C6BC6C661A318C50002F21CD /* MasterViewController.swift */,
+				C6BC6C681A318C50002F21CD /* DetailViewController.swift */,
+				C6BC6C6A1A318C50002F21CD /* Main.storyboard */,
+				C6BC6C6D1A318C50002F21CD /* Images.xcassets */,
+				C6BC6C6F1A318C50002F21CD /* LaunchScreen.xib */,
+				C6BC6C621A318C50002F21CD /* Supporting Files */,
 			);
 			path = BallotBox;
 			sourceTree = "<group>";
 		};
-		C68DC2B21A315BED00ACF464 /* Supporting Files */ = {
+		C6BC6C621A318C50002F21CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C68DC2B31A315BED00ACF464 /* Info.plist */,
-				C68DC2B41A315BED00ACF464 /* main.m */,
+				C6BC6C631A318C50002F21CD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C68DC2D11A315BED00ACF464 /* BallotBoxTests */ = {
+		C6BC6C791A318C50002F21CD /* BallotBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				C68DC2D41A315BED00ACF464 /* BallotBoxTests.m */,
-				C68DC2D21A315BED00ACF464 /* Supporting Files */,
+				C6BC6C7C1A318C50002F21CD /* BallotBoxTests.swift */,
+				C6BC6C7A1A318C50002F21CD /* Supporting Files */,
 			);
 			path = BallotBoxTests;
 			sourceTree = "<group>";
 		};
-		C68DC2D21A315BED00ACF464 /* Supporting Files */ = {
+		C6BC6C7A1A318C50002F21CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C68DC2D31A315BED00ACF464 /* Info.plist */,
+				C6BC6C7B1A318C50002F21CD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C68DC2AE1A315BED00ACF464 /* BallotBox */ = {
+		C6BC6C5E1A318C50002F21CD /* BallotBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C68DC2D81A315BED00ACF464 /* Build configuration list for PBXNativeTarget "BallotBox" */;
+			buildConfigurationList = C6BC6C801A318C51002F21CD /* Build configuration list for PBXNativeTarget "BallotBox" */;
 			buildPhases = (
-				C68DC2AB1A315BED00ACF464 /* Sources */,
-				C68DC2AC1A315BED00ACF464 /* Frameworks */,
-				C68DC2AD1A315BED00ACF464 /* Resources */,
+				C6BC6C5B1A318C50002F21CD /* Sources */,
+				C6BC6C5C1A318C50002F21CD /* Frameworks */,
+				C6BC6C5D1A318C50002F21CD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,46 +132,46 @@
 			);
 			name = BallotBox;
 			productName = BallotBox;
-			productReference = C68DC2AF1A315BED00ACF464 /* BallotBox.app */;
+			productReference = C6BC6C5F1A318C50002F21CD /* BallotBox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C68DC2CD1A315BED00ACF464 /* BallotBoxTests */ = {
+		C6BC6C751A318C50002F21CD /* BallotBoxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C68DC2DB1A315BED00ACF464 /* Build configuration list for PBXNativeTarget "BallotBoxTests" */;
+			buildConfigurationList = C6BC6C831A318C51002F21CD /* Build configuration list for PBXNativeTarget "BallotBoxTests" */;
 			buildPhases = (
-				C68DC2CA1A315BED00ACF464 /* Sources */,
-				C68DC2CB1A315BED00ACF464 /* Frameworks */,
-				C68DC2CC1A315BED00ACF464 /* Resources */,
+				C6BC6C721A318C50002F21CD /* Sources */,
+				C6BC6C731A318C50002F21CD /* Frameworks */,
+				C6BC6C741A318C50002F21CD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C68DC2D01A315BED00ACF464 /* PBXTargetDependency */,
+				C6BC6C781A318C50002F21CD /* PBXTargetDependency */,
 			);
 			name = BallotBoxTests;
 			productName = BallotBoxTests;
-			productReference = C68DC2CE1A315BED00ACF464 /* BallotBoxTests.xctest */;
+			productReference = C6BC6C761A318C50002F21CD /* BallotBoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C68DC2A71A315BED00ACF464 /* Project object */ = {
+		C6BC6C571A318C50002F21CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = BallotBox;
 				TargetAttributes = {
-					C68DC2AE1A315BED00ACF464 = {
+					C6BC6C5E1A318C50002F21CD = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					C68DC2CD1A315BED00ACF464 = {
+					C6BC6C751A318C50002F21CD = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = C68DC2AE1A315BED00ACF464;
+						TestTargetID = C6BC6C5E1A318C50002F21CD;
 					};
 				};
 			};
-			buildConfigurationList = C68DC2AA1A315BED00ACF464 /* Build configuration list for PBXProject "BallotBox" */;
+			buildConfigurationList = C6BC6C5A1A318C50002F21CD /* Build configuration list for PBXProject "BallotBox" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -191,29 +179,29 @@
 				en,
 				Base,
 			);
-			mainGroup = C68DC2A61A315BED00ACF464;
-			productRefGroup = C68DC2B01A315BED00ACF464 /* Products */;
+			mainGroup = C6BC6C561A318C50002F21CD;
+			productRefGroup = C6BC6C601A318C50002F21CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C68DC2AE1A315BED00ACF464 /* BallotBox */,
-				C68DC2CD1A315BED00ACF464 /* BallotBoxTests */,
+				C6BC6C5E1A318C50002F21CD /* BallotBox */,
+				C6BC6C751A318C50002F21CD /* BallotBoxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C68DC2AD1A315BED00ACF464 /* Resources */ = {
+		C6BC6C5D1A318C50002F21CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68DC2C41A315BED00ACF464 /* Main.storyboard in Resources */,
-				C68DC2C91A315BED00ACF464 /* LaunchScreen.xib in Resources */,
-				C68DC2C61A315BED00ACF464 /* Images.xcassets in Resources */,
+				C6BC6C6C1A318C50002F21CD /* Main.storyboard in Resources */,
+				C6BC6C711A318C50002F21CD /* LaunchScreen.xib in Resources */,
+				C6BC6C6E1A318C50002F21CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C68DC2CC1A315BED00ACF464 /* Resources */ = {
+		C6BC6C741A318C50002F21CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,49 +211,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C68DC2AB1A315BED00ACF464 /* Sources */ = {
+		C6BC6C5B1A318C50002F21CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68DC2C11A315BED00ACF464 /* DetailViewController.m in Sources */,
-				C68DC2BE1A315BED00ACF464 /* MasterViewController.m in Sources */,
-				C68DC2B81A315BED00ACF464 /* AppDelegate.m in Sources */,
-				C68DC2B51A315BED00ACF464 /* main.m in Sources */,
-				C68DC2BB1A315BED00ACF464 /* BallotBox.xcdatamodeld in Sources */,
+				C6BC6C691A318C50002F21CD /* DetailViewController.swift in Sources */,
+				C6BC6C671A318C50002F21CD /* MasterViewController.swift in Sources */,
+				C6BC6C651A318C50002F21CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C68DC2CA1A315BED00ACF464 /* Sources */ = {
+		C6BC6C721A318C50002F21CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68DC2D51A315BED00ACF464 /* BallotBoxTests.m in Sources */,
+				C6BC6C7D1A318C50002F21CD /* BallotBoxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C68DC2D01A315BED00ACF464 /* PBXTargetDependency */ = {
+		C6BC6C781A318C50002F21CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C68DC2AE1A315BED00ACF464 /* BallotBox */;
-			targetProxy = C68DC2CF1A315BED00ACF464 /* PBXContainerItemProxy */;
+			target = C6BC6C5E1A318C50002F21CD /* BallotBox */;
+			targetProxy = C6BC6C771A318C50002F21CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C68DC2C21A315BED00ACF464 /* Main.storyboard */ = {
+		C6BC6C6A1A318C50002F21CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C68DC2C31A315BED00ACF464 /* Base */,
+				C6BC6C6B1A318C50002F21CD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C68DC2C71A315BED00ACF464 /* LaunchScreen.xib */ = {
+		C6BC6C6F1A318C50002F21CD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C68DC2C81A315BED00ACF464 /* Base */,
+				C6BC6C701A318C50002F21CD /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -273,7 +259,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C68DC2D61A315BED00ACF464 /* Debug */ = {
+		C6BC6C7E1A318C51002F21CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -311,10 +297,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		C68DC2D71A315BED00ACF464 /* Release */ = {
+		C6BC6C7F1A318C51002F21CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,27 +336,29 @@
 			};
 			name = Release;
 		};
-		C68DC2D91A315BED00ACF464 /* Debug */ = {
+		C6BC6C811A318C51002F21CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BallotBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		C68DC2DA1A315BED00ACF464 /* Release */ = {
+		C6BC6C821A318C51002F21CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BallotBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		C68DC2DC1A315BED00ACF464 /* Debug */ = {
+		C6BC6C841A318C51002F21CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -388,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		C68DC2DD1A315BED00ACF464 /* Release */ = {
+		C6BC6C851A318C51002F21CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -406,45 +395,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C68DC2AA1A315BED00ACF464 /* Build configuration list for PBXProject "BallotBox" */ = {
+		C6BC6C5A1A318C50002F21CD /* Build configuration list for PBXProject "BallotBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C68DC2D61A315BED00ACF464 /* Debug */,
-				C68DC2D71A315BED00ACF464 /* Release */,
+				C6BC6C7E1A318C51002F21CD /* Debug */,
+				C6BC6C7F1A318C51002F21CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C68DC2D81A315BED00ACF464 /* Build configuration list for PBXNativeTarget "BallotBox" */ = {
+		C6BC6C801A318C51002F21CD /* Build configuration list for PBXNativeTarget "BallotBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C68DC2D91A315BED00ACF464 /* Debug */,
-				C68DC2DA1A315BED00ACF464 /* Release */,
+				C6BC6C811A318C51002F21CD /* Debug */,
+				C6BC6C821A318C51002F21CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C68DC2DB1A315BED00ACF464 /* Build configuration list for PBXNativeTarget "BallotBoxTests" */ = {
+		C6BC6C831A318C51002F21CD /* Build configuration list for PBXNativeTarget "BallotBoxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C68DC2DC1A315BED00ACF464 /* Debug */,
-				C68DC2DD1A315BED00ACF464 /* Release */,
+				C6BC6C841A318C51002F21CD /* Debug */,
+				C6BC6C851A318C51002F21CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C68DC2B91A315BED00ACF464 /* BallotBox.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C68DC2BA1A315BED00ACF464 /* BallotBox.xcdatamodel */,
-			);
-			currentVersion = C68DC2BA1A315BED00ACF464 /* BallotBox.xcdatamodel */;
-			path = BallotBox.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = C68DC2A71A315BED00ACF464 /* Project object */;
+	rootObject = C6BC6C571A318C50002F21CD /* Project object */;
 }
