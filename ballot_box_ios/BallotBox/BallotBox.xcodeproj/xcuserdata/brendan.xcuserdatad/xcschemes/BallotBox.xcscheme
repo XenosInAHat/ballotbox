@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C68DC2AE1A315BED00ACF464"
+               BlueprintIdentifier = "C6BC6C5E1A318C50002F21CD"
                BuildableName = "BallotBox.app"
                BlueprintName = "BallotBox"
                ReferencedContainer = "container:BallotBox.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C68DC2CD1A315BED00ACF464"
+               BlueprintIdentifier = "C6BC6C751A318C50002F21CD"
                BuildableName = "BallotBoxTests.xctest"
                BlueprintName = "BallotBoxTests"
                ReferencedContainer = "container:BallotBox.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C68DC2CD1A315BED00ACF464"
+               BlueprintIdentifier = "C6BC6C751A318C50002F21CD"
                BuildableName = "BallotBoxTests.xctest"
                BlueprintName = "BallotBoxTests"
                ReferencedContainer = "container:BallotBox.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C68DC2AE1A315BED00ACF464"
+            BlueprintIdentifier = "C6BC6C5E1A318C50002F21CD"
             BuildableName = "BallotBox.app"
             BlueprintName = "BallotBox"
             ReferencedContainer = "container:BallotBox.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C68DC2AE1A315BED00ACF464"
+            BlueprintIdentifier = "C6BC6C5E1A318C50002F21CD"
             BuildableName = "BallotBox.app"
             BlueprintName = "BallotBox"
             ReferencedContainer = "container:BallotBox.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C68DC2AE1A315BED00ACF464"
+            BlueprintIdentifier = "C6BC6C5E1A318C50002F21CD"
             BuildableName = "BallotBox.app"
             BlueprintName = "BallotBox"
             ReferencedContainer = "container:BallotBox.xcodeproj">
