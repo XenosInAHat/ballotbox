@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20141104215053) do
     t.datetime "updated_at"
     t.string   "creator"
     t.boolean  "private"
+    t.string   "show_election_id"
   end
 
   create_table "rs_evaluations", force: true do |t|
