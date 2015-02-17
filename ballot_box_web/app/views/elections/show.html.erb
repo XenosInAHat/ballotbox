@@ -19,9 +19,9 @@
             <p>
                 <%= choice.body %>
                 <% if current_user && !choice.has_evaluation?(:votes, current_user) %>
-                    | <%= link_to "Vote for this!", vote_election_choice_path(election_id: choice.election_id, id: choice.id, type: "up"), method: "post" %>
+                    | <%= link_to "Vote for this!", vote_election_choice_path(election_random_id: @election.random_id, id: choice.id, type: "up"), method: "post" %>
                 <% else %>
-                    | <%= link_to "Cancel vote", vote_election_choice_path(election_id: choice.election_id, id: choice.id, type: "down"), method: "post" %>
+                    | <%= link_to "Cancel vote", vote_election_choice_path(election_random_id: @election.random_id, id: choice.id, type: "down"), method: "post" %>
                 <% end %>
             </p>
         <% end %>
