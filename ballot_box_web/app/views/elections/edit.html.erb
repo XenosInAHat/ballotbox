@@ -11,24 +11,30 @@
             </ul>
         </div>
     <% end %>
-    <p>
-        <%= f.label :title %><br />
-        <%= f.text_field :title %>
-    </p>
-    <p>
-        <%= f.label :text %><br />
-        <%= f.text_area :text %>
-    </p>
-    <h2>Choices</h2>
-    <%= f.fields_for :choices do |ff| %>
-        <div>
-            <%= ff.label :body %>
-            <%= ff.text_field :body %>
-        </div>
+    <% if current_user.email == @election.creator %>
+        <p>
+            <%= f.label :title %><br />
+            <%= f.text_field :title %>
+        </p>
+        <p>
+            <%= f.label :text %><br />
+            <%= f.text_area :text %>
+        </p>
+        <h2>Choices</h2>
+        <%= f.fields_for :choices do |ff| %>
+            <div>
+                <%= ff.label :body %>
+                <%= ff.text_field :body %>
+            </div>
+        <% end %>
+        <p>
+            <%= f.submit %>
+        </p>
+    <% else %>
+        <p>
+            You can't edit an election you don't own!
+        </p>
     <% end %>
-    <p>
-        <%= f.submit %>
-    </p>
 <% end %>
 
 <%= link_to 'Back', elections_path %>
