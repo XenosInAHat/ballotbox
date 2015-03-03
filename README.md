@@ -12,4 +12,7 @@ Features Implemented:
 
 Features In Progress:
 * Mobile apps - Android & iPhone
-Android app repository: [https://github.com/breadknock/ballotbox-android]
+
+Android app repository: https://github.com/breadknock/ballotbox-android
+
+IOS app repository: https://github.com/JGrippo/BallotBoxiOS
