@@ -1,8 +1,11 @@
 class ChoicesController < ApplicationController
     def vote
-        value = params[:type] == "up" ? 1 : 0
         @choice = Choice.find(params[:id])
-        @choice.add_or_update_evaluation(:votes, value, current_user)
+        if params[:type] == "up"
+            @choice.add_or_update_evaluation(:votes, 1, current_user)
+        else 
+            @choice.delete_evaluation(:votes, current_user)
+        end
         redirect_to elections_path, notice: "Thank you for voting!"
     end
 end
